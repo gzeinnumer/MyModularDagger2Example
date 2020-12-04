@@ -1,19 +1,22 @@
-package com.gzeinnumer.module_1;
+package com.gzeinnumer.module_1.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
 
+import com.gzeinnumer.module_1.R;
 import com.gzeinnumer.module_1.di.provider.Module_1_ComponentProvider;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 public class Module_1_Activity extends AppCompatActivity {
 
     private static final String TAG = "Module_1_Activity";
 
     @Inject
+    @Named("Module1")
     String str;
 
     @Inject
@@ -26,7 +29,7 @@ public class Module_1_Activity extends AppCompatActivity {
 
         ((Module_1_ComponentProvider) getApplication()).getModule_1_Component().inject(this);
 
-        int sum = module1VM.exceute(10, 20);
+        int sum = module1VM.execute(10, 20);
 
         Log.d(TAG, "onCreate: "+sum);
         Log.d(TAG, "onCreate: "+str);

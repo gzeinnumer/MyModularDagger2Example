@@ -3,7 +3,7 @@
     package="com.gzeinnumer.module_1">
 
     <application>
-        <activity android:name=".Module_1_Activity"></activity>
+        <activity android:name=".ui.Module_1_Activity"></activity>
     </application>
 
 </manifest>

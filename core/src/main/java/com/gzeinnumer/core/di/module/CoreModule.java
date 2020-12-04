@@ -1,8 +1,7 @@
-package com.gzeinnumer.core.di;
+package com.gzeinnumer.core.di.module;
 
 import android.app.Application;
-
-import com.gzeinnumer.core.resource.StringsProvider;
+import android.content.Context;
 
 import javax.inject.Singleton;
 
@@ -18,8 +17,8 @@ public class CoreModule {
 
     @Provides
     @Singleton
-    public StringsProvider stringProvider(){
-        return new StringsProvider(application);
+    public Context providesContext(){
+        return application.getApplicationContext();
     }
 
     @Provides

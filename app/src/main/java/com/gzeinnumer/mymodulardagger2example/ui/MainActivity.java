@@ -1,4 +1,4 @@
-package com.gzeinnumer.mymodulardagger2example;
+package com.gzeinnumer.mymodulardagger2example.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.gzeinnumer.module_2.Module_2_Activity;
+import com.gzeinnumer.module_1.ui.Module_1_Activity;
+import com.gzeinnumer.module_2.ui.Module_2_Activity;
+import com.gzeinnumer.mymodulardagger2example.R;
 import com.gzeinnumer.mymodulardagger2example.di.provider.AppComponentProvider;
 
 import javax.inject.Inject;

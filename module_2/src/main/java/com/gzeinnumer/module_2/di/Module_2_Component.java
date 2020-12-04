@@ -1,8 +1,9 @@
 package com.gzeinnumer.module_2.di;
 
 
-import com.gzeinnumer.core.di.CoreModule;
-import com.gzeinnumer.module_2.Module_2_Activity;
+import com.gzeinnumer.core.di.module.CoreModule;
+import com.gzeinnumer.module_2.di.module.Module_2_Module;
+import com.gzeinnumer.module_2.ui.Module_2_Activity;
 
 import javax.inject.Singleton;
 
@@ -11,8 +12,8 @@ import dagger.Component;
 @Singleton
 @Component(
         modules = {
-                Module_2_Module.class,
-                CoreModule.class
+                CoreModule.class,
+                Module_2_Module.class
         }
 )
 public interface Module_2_Component {

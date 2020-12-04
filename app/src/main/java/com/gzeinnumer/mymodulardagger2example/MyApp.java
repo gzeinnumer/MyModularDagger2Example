@@ -2,7 +2,7 @@ package com.gzeinnumer.mymodulardagger2example;
 
 import android.app.Application;
 
-import com.gzeinnumer.core.di.CoreModule;
+import com.gzeinnumer.core.di.module.CoreModule;
 import com.gzeinnumer.module_1.di.DaggerModule_1_Component;
 import com.gzeinnumer.module_1.di.Module_1_Component;
 import com.gzeinnumer.module_1.di.provider.Module_1_ComponentProvider;
